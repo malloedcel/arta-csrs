@@ -1,5 +1,10 @@
 <?php
 
+use App\Http\Controllers\CsrController;
+use App\Http\Controllers\CsrEvaluationController;
+use App\Http\Controllers\CsrTabulationController;
+use App\Http\Controllers\SqdCsrEvaluationController;
+use App\Http\Controllers\SrfController;
 use Illuminate\Foundation\Application;
 use Illuminate\Support\Facades\Route;
 use Inertia\Inertia;
@@ -21,4 +26,12 @@ Route::middleware([
     Route::get('/dashboard', function () {
         return Inertia::render('Dashboard');
     })->name('dashboard');
+    
+
+    Route::resource('srf', SrfController::class);
+    Route::resource('csr', CsrController::class);
+    Route::resource('csr-tabulation', CsrTabulationController::class);
+    Route::resource('cc-csr-evaluation', CsrEvaluationController::class);
+    Route::resource('sqd-csr-evaluation', SqdCsrEvaluationController::class);
 });
+

@@ -51,6 +51,37 @@ const logout = () => {
                                 <NavLink :href="route('dashboard')" :active="route().current('dashboard')">
                                     Dashboard
                                 </NavLink>
+                                
+                            </div>
+
+                            <div class="hidden space-x-8 sm:-my-px sm:ms-10 sm:flex">
+                                <NavLink :href="route('srf.index')" :active="route().current('srf.index')">
+                                    SRF
+                                </NavLink>
+                            </div>
+
+                            <div class="hidden space-x-8 sm:-my-px sm:ms-10 sm:flex">
+                                <NavLink :href="route('csr.index')" :active="route().current('csr.index')">
+                                    CSR
+                                </NavLink>
+                            </div>
+
+                            <div class="hidden space-x-8 sm:-my-px sm:ms-10 sm:flex">
+                                <NavLink :href="route('cc-csr-evaluation.index')" :active="route().current('cc-csr-evaluation.index')">
+                                   (CC) CSR EVALUATION
+                                </NavLink>
+                            </div>
+
+                            <div class="hidden space-x-8 sm:-my-px sm:ms-10 sm:flex">
+                                <NavLink :href="route('sqd-csr-evaluation.index')" :active="route().current('sqd-csr-evaluation.index')">
+                                   (SQD) CSR EVALUATION
+                                </NavLink>
+                            </div>
+
+                            <div class="hidden space-x-8 sm:-my-px sm:ms-10 sm:flex">
+                                <NavLink :href="route('csr-tabulation.index')" :active="route().current('csr-tabulation.index')">
+                                    CSR TABULATION
+                                </NavLink>
                             </div>
                         </div>
 
@@ -193,6 +224,34 @@ const logout = () => {
                     <div class="pt-2 pb-3 space-y-1">
                         <ResponsiveNavLink :href="route('dashboard')" :active="route().current('dashboard')">
                             Dashboard
+                        </ResponsiveNavLink>
+                    </div>
+                    <div class="pt-2 pb-3 space-y-1">
+                        <ResponsiveNavLink :href="route('srf.index')" :active="route().current('srf.index')">
+                            SRF
+                        </ResponsiveNavLink>
+                    </div>
+                    <div class="pt-2 pb-3 space-y-1">
+                        <ResponsiveNavLink :href="route('csr.index')" :active="route().current('csr.index')">
+                            CSR
+                        </ResponsiveNavLink>
+                    </div>
+
+                    <div class="pt-2 pb-3 space-y-1">
+                        <ResponsiveNavLink :href="route('cc-csr-evaluation.index')" :active="route().current('cc-csr-evaluation.index')">
+                           CC CSR EVALUATION
+                        </ResponsiveNavLink>
+                    </div>
+
+                    <div class="pt-2 pb-3 space-y-1">
+                        <ResponsiveNavLink :href="route('sqd-csr-evaluation.index')" :active="route().current('sqd-csr-evaluation.index')">
+                           SQD CSR EVALUATION
+                        </ResponsiveNavLink>
+                    </div>
+
+                    <div class="pt-2 pb-3 space-y-1">
+                        <ResponsiveNavLink :href="route('csr-tabulation.index')" :active="route().current('csr-tabulation.index')">
+                            CSR TABULATION
                         </ResponsiveNavLink>
                     </div>
 
